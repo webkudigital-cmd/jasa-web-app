@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasa Pembuatan Website Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Hero Section -->
+  <header class="max-w-5xl mx-auto px-6 pt-20 pb-12 text-center">
+    <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400 bg-indigo-950/60 border border-indigo-800/50 px-4 py-1.5 rounded-full inline-block mb-4">Web Development Agency</span>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
+      Ubah Ide Anda Menjadi <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Website Premium</span>
+    </h1>
+    <p class="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
+      Solusi pembuatan website modern, cepat, ampuh tingkatkan *conversion rate*, dan disesuaikan khusus untuk kebutuhan bisnis Anda.
+    </p>
+  </header>
+
+  <!-- Form Pemesanan -->
+  <section class="max-w-2xl mx-auto px-6 pb-24">
+    <div class="bg-slate-900/80 border border-slate-800 backdrop-blur-xl p-8 rounded-2xl shadow-2xl">
+      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <i class="fa-solid fa-paper-plane text-indigo-400"></i> Form Konsultasi & Pemesanan
+      </h2>
+
+      <form id="orderForm" class="space-y-5">
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Nama Lengkap</label>
+          <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+            <input type="email" id="email" required placeholder="budi@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Nomor WhatsApp</label>
+            <input type="tel" id="wa" required placeholder="08123456789" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Jenis Website</label>
+          <select id="jenisWeb" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+            <option value="" disabled selected>Pilih jenis website...</option>
+            <option value="Landing Page / Company Profile">Landing Page / Company Profile</option>
+            <option value="Toko Online / E-Commerce">Toko Online / E-Commerce</option>
+            <option value="Web Aplikasi Custom">Web Aplikasi Custom</option>
+            <option value="Portofolio / Blog">Portofolio / Blog</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Estimasi Budget</label>
+          <select id="budget" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+            <option value="" disabled selected>Pilih rentang budget...</option>
+            <option value="< 1 Juta">Di bawah Rp 1.000.000</option>
+            <option value="1 - 3 Juta">Rp 1.000.000 - Rp 3.000.000</option>
+            <option value="3 - 5 Juta">Rp 3.000.000 - Rp 5.000.000</option>
+            <option value="> 5 Juta">Di atas Rp 5.000.000</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Catatan / Kebutuhan Khusus</label>
+          <textarea id="catatan" rows="3" placeholder="Jelaskan kebutuhan fitur atau contoh website referensi Anda..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition"></textarea>
+        </div>
+
+        <button type="submit" id="btnSubmit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 rounded-xl transition duration-200 shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+          <span>Kirim & Lanjut Diskusi WA</span>
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // ⚠️ GANTI DENGAN URL WEB APP GOOGLE APPS SCRIPT ANDA
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxwZ40hi7eTfW5yBbIZWPp1u03T5g5lNjRTzkuB2ML1s49oaroim6lVsuCw-pxOEccVOg/exec";
+
+    document.getElementById('orderForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const btn = document.getElementById('btnSubmit');
+      btn.disabled = true;
+      btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Menyimpan data...`;
+
+      const payload = {
+        nama: document.getElementById('nama').value,
+        email: document.getElementById('email').value,
+        wa: document.getElementById('wa').value,
+        jenisWeb: document.getElementById('jenisWeb').value,
+        budget: document.getElementById('budget').value,
+        catatan: document.getElementById('catatan').value
+      };
+
+      try {
+        const response = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: JSON.stringify(payload)
+        });
+        
+        const result = await response.json();
+        
+        if (result.result === 'success') {
+          alert('Pesanan berhasil terkirim! Notifikasi telah dikirim ke email, dan Anda akan diarahkan ke WhatsApp.');
+          window.location.href = result.waLink; 
+        } else {
+          alert('Terjadi kesalahan: ' + result.error);
+        }
+      } catch (err) {
+        alert('Gagal mengirim pesanan. Pastikan URL Apps Script sudah benar dan dapat diakses publik.');
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<span>Kirim & Lanjut Diskusi WA</span> <i class="fa-solid fa-arrow-right text-sm"></i>`;
+      }
+    });
+  </script>
+</body>
+</html>
